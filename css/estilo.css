@@ -1,0 +1,256 @@
+/*font-family: 'Raleway', sans-serif;*/
+
+/*font-family: 'Raleway', sans-serif;*/
+
+/* Reglas globales */
+h1, h2, h3, h4, h5, h6, p, a, span, strong, div, form, input, select, option, textarea, button { font-family: 'Raleway', sans-serif !important; }
+
+header, main, footer, aside, nav, figure, figcaption, article { display: block; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+body { margin: 0 !important; }
+
+
+
+/* Menú Móvil */
+aside#menu-movil { width: 240px; height: 100%; position: fixed; top: 0; right: -240px; z-index: 9999; margin: 0; float: none; background: rgba(51, 51, 51, 0.95); }
+
+aside#menu-movil a#abrir { width: 36px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 15px; left: -50px; z-index: 5; background: #222; text-align: center; color: #fff; font-size: 1em; padding: 8.5px 0; transition: all 0.3s ease-out; }
+aside#menu-movil a#abrir:hover { background: #fff; color: #222; transition: all 0.3s ease-out; }
+
+aside#menu-movil a#cerrar { width: 36px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 15px; left: -50px; z-index: 4; background: #222; text-align: center; color: #fff; font-size: 1em; padding: 8.5px 0; transition: all 0.3s ease-out; }
+aside#menu-movil a#cerrar:hover { background: #fff; color: #222; transition: all 0.3s ease-out; }
+
+aside#menu-movil nav { width: 70%; height: auto; position: relative; margin: 5vh auto 0 auto; float: none; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 5vh; color: #fff; text-decoration: none; font-size: 1em; line-height: 1em; text-align: left; font-weight: 500; letter-spacing: 0.055em; transition: all 0.3s ease-out; }
+aside#menu-movil nav a:hover { color: #6ACF3A; transition: all 0.3s ease-out; }
+
+
+
+/* Botón WhatsApp */
+aside#boton-wp { width: 50px; height: 50px; position: fixed; bottom: 20px; right: 22px; z-index: 999; margin: 0; float: none; }
+aside#boton-wp a { width: 50px; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #6ACF3A; border-radius: 50%; text-align: center; color: #fff; font-size: 1.5em; padding: 10.5px 0; transition: all 0.3s ease-out; }
+aside#boton-wp a:hover { background: #297406; transition: all 0.3s ease-out; }
+
+
+
+/* Header */
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 999; margin: 0; float: none; background: transparent; }
+header a { width: 227px; height: 76px; display: block; position: relative; margin: 11px 0 11px 15px; float: left; transition: all 0.3s ease-out; }
+header a img { width: 100%; height: auto; display: block; }
+header a:hover { opacity: 0.7; transition: all 0.3s ease-out; }
+
+
+
+/* Main */
+main { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+
+
+/* Section VIDEO */
+main section#video { width: 100%; height: 100vh; position: relative; margin: 0 auto; float: none; background: #f0f0f0; overflow: hidden; }
+
+main section#video video { width: 100%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; display: block; transform: scale(1.2); }
+main section#video video source { width: 100%; height: 100vh; position: relative; margin: 0 auto; float: none; display: block; }
+
+main section#video article { width: 100%; height: 100vh; position: absolute; top: 0; left: 0; z-index: 2; display: block; background: rgba(0, 0, 0, 0.15); }
+main section#video article h1 { font-weight: bold; font-size: 3em; line-height: 1em; padding: 40vh 0 28px 0; text-align: center; }
+main section#video article p { font-weight: 500; font-size: 1.5em; line-height: 1.3em; text-align: center; padding: 0 25%; }
+
+@keyframes anima-flecha-abajo {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+main section#video article a { width: 42px; height: 40px; display: block; margin: 27vh auto 0 auto; float: none; position: relative; transform: translateY(0); transition: all 0.3s ease-out; animation-name: anima-flecha-abajo; animation-duration: 3s; animation-play-state: running; animation-direction: normal; animation-iteration-count: infinite; animation-timing-function: ease-out; }
+main section#video article a img { width: 100%; height: auto; display: block; }
+main section#video article a:hover { opacity: 0.5; transition: all 0.3s ease-out; }
+
+            
+
+/* Section PRESENTACION */
+main section#presentacion { width: 100%; height: 400px; position: relative; margin: 0 auto; float: none; background: #E4EEF1; }
+main section#presentacion figure { width: 350px; height: 400px; position: relative; margin: 0; float: left; background: url('../img/DSC_1817\ \(2\).jpg') no-repeat top center; background-size: cover; }
+main section#presentacion article { width: 60%; height: 400px; position: relative; margin: 0; float: left; }
+main section#presentacion article h2 { font-size: 1.5em; line-height: 1.5em; color: rgb(0, 0, 0); font-weight: 800; letter-spacing: 0.3em; padding: 52px 64px 16px 200px; text-transform: uppercase; text-align: center}
+main section#presentacion article p { font-size: 1em; line-height: 1.7em; color: rgb(0, 0, 0); font-weight: 500; letter-spacing: 0.09em; padding: 16px 64px 16px 200px; }
+main section#presentacion article a { width: 208px; height: 38px; display: block; margin: 16px 0 0 200px; float: none; position: relative; background: #fff; border-radius: 25px; text-decoration: none; transition: all 0.3s ease-out; text-align: center}
+main section#presentacion article a i { width: 38px; height: auto; display: block; float: left; margin: 0 0 0 8px; color: #222; font-size: 1.5em; line-height: 1em; text-align: center; padding: 7px 0; transition: all 0.3s ease-out; }
+main section#presentacion article a span { width: 143px; height: auto; display: block; float: left; margin: 0 8px 0 6px; font-size: 0.9em; line-height: 1em; color: #333; font-weight: 600; letter-spacing: 0.02em; padding: 12px 0; transition: all 0.3s ease-out; }
+main section#presentacion article a:hover { background: #9D9D9D; transition: all 0.3s ease-out; }
+
+
+
+      
+
+/* Section Protafolio */
+main section#portafolio { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #33434F; }
+
+main section#portafolio article { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#portafolio article h2 { font-weight: 900; font-size: 1.5em; line-height: 1.2em; padding: 86px 25% 24px 25%; text-align: center; text-transform: uppercase; letter-spacing: 0.3em; }
+main section#portafolio article hr { width: 40%; height: 1px; position: relative; margin: 0 auto 24px; float: none; border: none; background: #999; opacity: 0.5; }
+main section#portafolio article p { font-weight: 500; font-size: 1.1em; line-height: 1.7em; padding: 0 25% 86px 25%; text-align: center; }
+
+main section#portafolio nav { width: 100%; height: 680px; position: relative; margin: 0 auto; float: none; background: #000; }
+main section#portafolio nav a { width: 33.33%; height: 340px; position: relative; margin: 0; float: left; display: block; text-decoration: none; transition: all 0.3s ease-out; }
+main section#portafolio nav a strong { width: 90%; height: auto; display: block; float: none; margin: 0; position: absolute; bottom: 5%; left: 5%; font-size: 0.8em; line-height: 1.3em; color: #fff; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; padding: 0;
+    transition: all 0.3s ease-out; }
+main section#portafolio nav a:hover { opacity: 0.5; transition: all 0.3s ease-out; }
+main section#portafolio nav a:hover strong { bottom: 3%; left: 3%; transition: all 0.3s ease-out; }
+
+main section#portafolio nav a#proyecto-01 { background: url('../img//GA_imagenes-blog_2.png') no-repeat top center; background-size: cover; text-align: center }
+main section#portafolio nav a#proyecto-02 { background: url('../img/Evolucion-html-1-1024x576.jpg') no-repeat top center; background-size: cover; text-align: center }
+main section#portafolio nav a#proyecto-03 { background: url('../img/Java-header.png') no-repeat top center; background-size: cover; text-align: center }
+main section#portafolio nav a#proyecto-04 { background: url('../img/análisis-de-datos-1080x675.jpg') no-repeat top center; background-size: cover; text-align: center }
+main section#portafolio nav a#proyecto-05 { background: url('../img/0a42cb2401255660546c8f1cfa7fb689.jpg') no-repeat top center; background-size: cover; text-align: center }
+main section#portafolio nav a#proyecto-06 { background: url('../img/portafolio-01.jpg') no-repeat top center; background-size: cover; text-align: center }
+
+main section#portafolio nav a#proyecto-07 { background: url('../img/portafolio-07.jpg') no-repeat top center; background-size: cover; }
+main section#portafolio nav a#proyecto-08 { background: url('../img/portafolio-08.jpg') no-repeat top center; background-size: cover; } 
+
+
+
+           
+
+/* Section ESTUDIO */
+main section#estudios { width: 100%; height: 750px; position: relative; margin: 0 auto; float: none; background: #33434F; }
+main section#estudios article { width: 1100px; height: 585px; position: relative; margin: 0 auto; float: none; top: 96px;  }
+
+main section#estudios article figure { width: 448px; height: 585px; position: relative; margin: 0 80px 0 0; float: left;  }
+main section#estudios article figure img { width: 130%; height: 585px; display: block; }
+
+main section#estudios article div#info-estudios { width: 570px; height: 585px; position: relative; margin: 0; float: left; background: #ffffff; }
+main section#estudios article div#info-estudios h2 {  font-weight: 900; font-size: 1.5em; line-height: 1.2em; padding: 50px 25% 24px 25%; text-align: center; text-transform: uppercase; letter-spacing: 0.3em; }
+/* main section#estudios article div#info-estudios h4 {  width: 60%; height: 1px; position: relative; margin: 0 auto 24px; float: none; border: none; background: #999;  text-align: center;  } */
+main section#estudios article div#info-estudios p { font-weight: 500; font-size: 1.0em; line-height: 1.3em; padding: 16px 64px 50px 10%; letter-spacing: 0.09em;   }
+ /* main section#presentacion article p { font-size: 1em; line-height: 1.7em; color: rgb(0, 0, 0); font-weight: 500; letter-spacing: 0.09em; padding: 16px 64px 16px 200px; } */
+
+/* opacity: 0.5; */
+
+
+/* Section Habilidades */
+main section#habilidades { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #E4EEF1; padding: 0 0 86px 0; }
+main section#habilidades h2 { font-weight: 900; font-size: 1.5em; line-height: 1.2em; padding: 86px 25% 48px 25%; text-align: center; text-transform: uppercase; letter-spacing: 0.3em; }
+main section#habilidades article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#habilidades article div.box-habil { width: 254px; height: 236px; position: relative; margin: 9px; float: none; display: inline-block; background: #fff; }
+main section#habilidades article div.box-habil i { width: 70px; height: auto; font-size: 3em; text-align: center; display: block; margin: 48px auto 16px; padding: 11px 0; float: none; border: solid 1px #999; border-radius: 50%; }
+main section#habilidades article div.box-habil h5 {  }
+
+main section#habilidades article div.box-habil:nth-child(1) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(2) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(3) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(4) i { color: #09f; }
+main section#habilidades article div.box-habil:nth-child(5) i { color: #e100ff; }
+main section#habilidades article div.box-habil:nth-child(6) i { color: #e5ff00; }
+main section#habilidades article div.box-habil:nth-child(7) i { color: #073350; }
+main section#habilidades article div.box-habil:nth-child(8) i { color: #f90; }
+                        
+
+
+/* Section pie de pagina */
+main section#contacto { width: 100%; height: 540px; position: relative; margin: 0 auto; float: none; background: #33434F; }
+main section#contacto article { width: 30%; height: 308px; position: relative; margin: 0; float: left; padding: 106px 100px 96px 10%; }
+main section#contacto article div.box-contacto { position: relative; text-transform: uppercase; width: auto; height: auto;  }
+main section#contacto article div.box-contacto p { width: 150%; height: 10px; font-weight: 600; position: relative;  font-size: 1.5em;  line-height: 1.0em; padding: 16px 64px 30px 10%; text-transform: uppercase;  letter-spacing: 0.09em; }
+main section#contacto article div.box-contacto a { font-weight: 300; position: relative; font-size: 1.5em; line-height: 1.0em; padding: 16px 64px 30px 10%; letter-spacing: 0.09em;  text-transform: uppercase; nav-down: auto; text-emphasis-color: #ffffff;}
+main section#contacto article div.box-contacto nav{  width: 150%; height: 50px; font-weight: 900; position: relative;  font-size: 1.5em;  line-height: 1.0em; padding: 80px 25px 20px 80%; text-transform: uppercase;  letter-spacing: 0.09em;}
+/*main section#contacto article div.box-contacto a:hover {}*/
+
+
+/* Footer 
+footer { width: 10%; height: 100px; position: relative; margin: 0 auto; float: none; }
+footer a { width: 227px; height: 76px; display: block; position: relative; margin: 0 auto; float: none; top: 64px; transition: all 0.3s ease-out; }
+footer a img { width: 100%; height: auto; display: block; }
+footer a:hover { opacity: 0.7; transition: all 0.3s ease-out; } 
+
+*/
+
+
+/* Zona Responsive */
+
+/*
+Desktop: 1200px en adelante
+Tablets: 500px hasta 1199px
+Mobile: 340px hasta 499px
+*/
+
+/* Tablets */
+@media only screen and (max-width: 1199px) {
+    main section#video { height: 90vh; background: url('../video/video-gif.gif') no-repeat top center; background-size: cover; }
+    main section#video video { height: 90vh; }
+    main section#video video source { height: 90vh; }
+    main section#video article { height: 90vh; }
+    main section#video article a { margin: 12vh auto 0 auto; width: 30px; }
+
+
+    main section#presentacion { height: auto; }
+    main section#presentacion figure { width: 100%; height: 400px; margin: 0 auto; float: none; }
+    main section#presentacion article { width: 100%; height: auto; margin: 0 auto; float: none; padding: 0 0 72px 0; }
+
+
+    main section#portafolio article h2 { padding: 86px 10% 24px 10%; }
+    main section#portafolio article hr { width: 80%; }
+    main section#portafolio article p { padding: 0 10% 86px 10%; }
+    main section#portafolio nav { height: 1000px; }
+    main section#portafolio nav a { width: 50%; height: 250px; }
+
+
+    main section#estudios { height: auto; }
+    main section#estudios article { width: 80%; height: auto; top: 48px; }
+    main section#estudios article figure { width: 100%; height: auto; margin: 0 auto 24px; float: none; }
+    main section#estudios article div#info-estudios { width: 100%; height: auto; margin: 0 auto 48px; float: none; }
+    main section#estudios article div#info-estudios h2 { padding: 8px 0 24px 0; }
+    main section#estudios article div#info-estudios p:last-child { padding: 0 0 48px 0; }
+
+
+    main section#habilidades { padding: 0 0 48px 0; }
+    main section#habilidades h2 { padding: 48px 0 48px 0; }
+    main section#habilidades article { width: 94%; }
+    main section#habilidades article div.box-habil { width: 47%;  height: 200px; margin: 1.5% 1%; }
+    main section#habilidades article div.box-habil i { margin: 42px auto 16px; }
+
+    main section#contacto article { width: 42%; padding: 96px 0 96px 3%; }
+    main section#contacto figure { width: 55%; }
+}
+
+@media only screen and (max-width: 879px) {
+    main section#video { height: 70vh; }
+    main section#video video { display: none; }
+    main section#video article { height: 70vh; }
+    main section#video article h1 { font-size: 2.5em; padding: 22vh 0 28px 0; }
+    main section#video article p { font-size: 1.15em; padding: 0 10%; }
+
+    main section#contacto { height: auto; }
+    main section#contacto article { width: 100%; height: auto; margin: 0 auto; float: none; padding: 0; }
+    main section#contacto article div.box-contacto p { width: 40%; }
+    main section#contacto article div.box-contacto > a { width: 55%; }
+    main section#contacto article div.box-contacto nav { width: 50%; }
+    main section#contacto figure { display: none; }
+}
+
+/* Mobile */
+@media only screen and (max-width: 499px) {
+    main section#presentacion figure { height: 250px; }
+    main section#presentacion article { width: 90%; }
+    main section#presentacion article h2 { font-size: 1.25em; line-height: 1.35em; padding: 72px 0 16px 0; }
+    main section#presentacion article p { font-size: 0.9em; padding: 16px 0 16px 0; }
+
+    main section#portafolio article { width: 90%; }
+    main section#portafolio article h2 { font-size: 1.25em; line-height: 1.35em; padding: 48px 0 24px 0; }
+    main section#portafolio article p { font-size: 0.9em; padding: 0 0 48px 0; }
+
+    main section#portafolio nav { height: auto; }
+    main section#portafolio nav a { width: 100%; height: 200px; margin: 0 auto; float: none; }
+
+    main section#habilidades article div.box-habil h5 { font-size: 0.9em; }
+
+    main section#contacto article div.box-contacto p { width: 27%; }
+    main section#contacto article div.box-contacto > a { width: 68%; }
+    main section#contacto article div.box-contacto nav { width: 63%; }
+}
+
+@media only screen and (max-width: 399px) {
+    main section#habilidades article div.box-habil h5 { font-size: 0.8em; }
+}
